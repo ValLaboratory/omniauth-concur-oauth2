@@ -11,7 +11,7 @@ module OmniAuth
       option :name, 'concur'
       option :client_options, {
           :site => 'https://www-us.api.concursolutions.com',
-          :authorize_url => '/oauth2/v0//oauth2/v0/token',
+          :authorize_url => '/oauth2/v0/token', 
           :token_url => '/oauth2/v0/token'
       }
     end
