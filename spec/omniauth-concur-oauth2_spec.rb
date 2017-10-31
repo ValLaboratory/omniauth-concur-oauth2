@@ -18,15 +18,15 @@ describe OmniAuth::Strategies::Concur do
     end
 
     it 'should have correct site' do
-      expect(subject.options.client_options.site).to eq('https://www.concursolutions.com')
+      expect(subject.options.client_options.site).to eq('https://www-us.api.concursolutions.com')
     end
 
     it 'should have correct authorize url' do
-      expect(subject.options.client_options.authorize_url).to eq('/net2/oauth2/Login.aspx')
+      expect(subject.options.client_options.authorize_url).to eq('/oauth2/v0//oauth2/v0/token')
     end
 
     it 'should have correct token url' do
-      expect(subject.options.client_options.token_url).to eq('/net2/oauth2/GetAccessToken.ashx')
+      expect(subject.options.client_options.token_url).to eq('//oauth2/v0/token')
     end
   end
 
