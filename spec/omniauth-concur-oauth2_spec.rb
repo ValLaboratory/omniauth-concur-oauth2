@@ -22,7 +22,7 @@ describe OmniAuth::Strategies::Concur do
     end
 
     it 'should have correct authorize url' do
-      expect(subject.options.client_options.authorize_url).to eq('/oauth2/v0/token')
+      expect(subject.options.client_options.authorize_url).to eq('/oauth2/v0/authorize')
     end
 
     it 'should have correct token url' do
