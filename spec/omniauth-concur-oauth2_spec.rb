@@ -18,7 +18,7 @@ describe OmniAuth::Strategies::Concur do
     end
 
     it 'should have correct site' do
-      expect(subject.options.client_options.site).to eq('https://www-us.api.concursolutions.com')
+      expect(subject.options.client_options.site).to eq('https://us-impl.api.concursolutions.com')
     end
 
     it 'should have correct authorize url' do

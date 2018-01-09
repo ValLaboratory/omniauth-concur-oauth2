@@ -10,7 +10,7 @@ module OmniAuth
     class Concur < OmniAuth::Strategies::OAuth2
       option :name, 'concur'
       option :client_options, {
-        :site => 'https://www-us.api.concursolutions.com',
+        :site => 'https://us-impl.api.concursolutions.com',
         :authorize_url => '/oauth2/v0/authorize',
         :token_method => :post,
         :token_url => '/oauth2/v0/token'
