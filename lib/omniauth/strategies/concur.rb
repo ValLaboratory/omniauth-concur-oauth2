@@ -40,6 +40,10 @@ module OmniAuth
         return '' if access_token.blank? || access_token.params.blank?
         access_token.params["id_token"]
       end
+
+      def  callback_url 
+        full_host + script_name + callback_path
+      end
     end
   end
 end

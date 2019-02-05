@@ -5,10 +5,10 @@ Gem::Specification.new do |s|
   s.name = 'omniauth-concur-oauth2'
   s.version = OmniAuth::Concur::VERSION
   s.platform = Gem::Platform::RUBY
-  s.date = '2017-10-31'
-  s.authors = ['chachaki']
-  s.email = 'sasaki@guildworks.jp'
-  s.homepage = 'http://github.com/GuildWorks/omniauth-concur-oauth2'
+  s.date = '2019-02-05'
+  s.authors = ['chari270']
+  s.email = 'hsuzuki@val.co.jp'
+  s.homepage = 'http://github.com/ValLaboratory/omniauth-concur-oauth2'
   s.summary = %Q{OmniAuth strategy for authenticating with Concur's OAuth2 API}
   s.description = s.summary
   s.license = "The MIT License (MIT)"
@@ -18,6 +18,6 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  s.add_dependency 'omniauth-oauth2', '~> 1.1'
+  s.add_dependency 'omniauth-oauth2', '>= 1.1'
 end
 
